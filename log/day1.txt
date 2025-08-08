@@ -1,0 +1,97 @@
+-date-
+Fri Aug  8 01:51:22 PM JST 2025
+-----------------------------------------------------
+-Check the login users-(who)
+hanenako tty1         2025-08-08 13:28
+hanenako pts/0        2025-08-08 13:29
+hanenako pts/1        2025-08-08 13:29 (192.168.189.1)
+hanenako pts/2        2025-08-08 13:29 (192.168.189.1)
+-----------------------------------------------------
+-Recent login history (only 3)(last -n 3)-
+hanenako pts/1        192.168.189.1    Fri Aug  8 13:29   still logged in
+reboot   system boot  6.8.0-62-generic Fri Aug  8 13:27   still running
+hanenako pts/1        192.168.189.1    Mon Jun 30 12:56 - 13:00  (00:03)
+
+wtmp begins Mon Jun 30 12:22:47 2025
+-----------------------------------------------------
+-Time elapsed since system bootup(uptime)-
+ 13:51:22 up 24 min,  2 users,  load average: 1.09, 0.77, 0.42
+-----------------------------------------------------
+-Kernel and OS information-
+(uname -a)
+Linux haneserver 6.8.0-62-generic #65-Ubuntu SMP PREEMPT_DYNAMIC Mon May 19 17:15:03 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+-----------------------------------------------------
+(lsb_release)
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.2 LTS
+Release:	24.04
+Codename:	noble
+-----------------------------------------------------
+-Disk usage-(df -h)
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              387M  1.6M  386M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv  9.8G  4.2G  5.1G  46% /
+tmpfs                              1.9G     0  1.9G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          1.8G  123M  1.5G   8% /boot
+tmpfs                              387M   12K  387M   1% /run/user/1000
+-----------------------------------------------------
+-Verifying Log Directory Size(du -sh /var/log/*)-
+0	/var/log/README
+0	/var/log/alternatives.log
+36K	/var/log/alternatives.log.1
+0	/var/log/apport.log
+76K	/var/log/apt
+8.0K	/var/log/auth.log
+12K	/var/log/auth.log.1
+60K	/var/log/bootstrap.log
+4.0K	/var/log/btmp
+4.0K	/var/log/btmp.1
+8.0K	/var/log/cloud-init-output.log
+72K	/var/log/cloud-init.log
+4.0K	/var/log/dist-upgrade
+136K	/var/log/dmesg
+136K	/var/log/dmesg.0
+40K	/var/log/dpkg.log
+696K	/var/log/dpkg.log.1
+0	/var/log/faillog
+1.1M	/var/log/installer
+36M	/var/log/journal
+180K	/var/log/kern.log
+176K	/var/log/kern.log.1
+4.0K	/var/log/landscape
+4.0K	/var/log/lastlog
+4.0K	/var/log/private
+272K	/var/log/syslog
+264K	/var/log/syslog.1
+32K	/var/log/sysstat
+40K	/var/log/unattended-upgrades
+4.0K	/var/log/vmware-network.1.log
+4.0K	/var/log/vmware-network.2.log
+4.0K	/var/log/vmware-network.3.log
+4.0K	/var/log/vmware-network.4.log
+4.0K	/var/log/vmware-network.5.log
+4.0K	/var/log/vmware-network.log
+4.0K	/var/log/vmware-vmsvc-root.1.log
+8.0K	/var/log/vmware-vmsvc-root.2.log
+4.0K	/var/log/vmware-vmsvc-root.log
+4.0K	/var/log/vmware-vmtoolsd-root.log
+8.0K	/var/log/wtmp
+-----------------------------------------------------
+-Current user information-
+(whoami)
+root
+-----------------------------------------------------
+(id)
+uid=0(root) gid=0(root) groups=0(root)
+-----------------------------------------------------
+-Check the directory that is important to the user-
+(echo $HOME)
+/root
+-----------------------------------------------------
+(ls -al)
+total 16
+drwxr-xr-x 3 root root 4096 Aug  8 13:51 .
+drwx------ 5 root root 4096 Aug  8 13:51 ..
+-rwxr-xr-x 1 root root 1946 Aug  8 13:51 day1.sh
+drwxr-xr-x 2 root root 4096 Aug  8 13:51 log

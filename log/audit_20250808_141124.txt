@@ -1,0 +1,147 @@
+===== [ System Audit Report ] =====
+作成日: Fri Aug  8 02:11:24 PM JST 2025
+-----------------------------------
+[1] システム基本情報
+hanenako tty1         2025-08-08 13:28
+hanenako pts/0        2025-08-08 13:29
+hanenako pts/1        2025-08-08 13:29 (192.168.189.1)
+hanenako pts/2        2025-08-08 13:29 (192.168.189.1)
+hanenako pts/1        192.168.189.1    Fri Aug  8 13:29   still logged in
+reboot   system boot  6.8.0-62-generic Fri Aug  8 13:27   still running
+hanenako pts/1        192.168.189.1    Mon Jun 30 12:56 - 13:00  (00:03)
+
+wtmp begins Mon Jun 30 12:22:47 2025
+ 14:11:24 up 44 min,  2 users,  load average: 0.03, 0.03, 0.14
+Linux haneserver 6.8.0-62-generic #65-Ubuntu SMP PREEMPT_DYNAMIC Mon May 19 17:15:03 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.2 LTS
+Release:	24.04
+Codename:	noble
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              387M  1.5M  386M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv  9.8G  3.4G  5.9G  37% /
+tmpfs                              1.9G     0  1.9G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          1.8G  192M  1.5G  12% /boot
+tmpfs                              387M   12K  387M   1% /run/user/1000
+0	/var/log/alternatives.log
+36K	/var/log/alternatives.log.1
+0	/var/log/apport.log
+92K	/var/log/apt
+12K	/var/log/auth.log
+12K	/var/log/auth.log.1
+60K	/var/log/bootstrap.log
+4.0K	/var/log/btmp
+4.0K	/var/log/btmp.1
+72K	/var/log/cloud-init.log
+8.0K	/var/log/cloud-init-output.log
+4.0K	/var/log/dist-upgrade
+136K	/var/log/dmesg
+136K	/var/log/dmesg.0
+44K	/var/log/dpkg.log
+696K	/var/log/dpkg.log.1
+0	/var/log/faillog
+1.1M	/var/log/installer
+36M	/var/log/journal
+180K	/var/log/kern.log
+176K	/var/log/kern.log.1
+4.0K	/var/log/landscape
+4.0K	/var/log/lastlog
+4.0K	/var/log/private
+0	/var/log/README
+280K	/var/log/syslog
+264K	/var/log/syslog.1
+32K	/var/log/sysstat
+52K	/var/log/unattended-upgrades
+4.0K	/var/log/vmware-network.1.log
+4.0K	/var/log/vmware-network.2.log
+4.0K	/var/log/vmware-network.3.log
+4.0K	/var/log/vmware-network.4.log
+4.0K	/var/log/vmware-network.5.log
+4.0K	/var/log/vmware-network.log
+4.0K	/var/log/vmware-vmsvc-root.1.log
+8.0K	/var/log/vmware-vmsvc-root.2.log
+4.0K	/var/log/vmware-vmsvc-root.log
+4.0K	/var/log/vmware-vmtoolsd-root.log
+8.0K	/var/log/wtmp
+-----------------------------------
+[2] カレントユーザ
+root
+uid=0(root) gid=0(root) groups=0(root)
+-----------------------------------
+[3] アカウントリスト (/etc/passwd)
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+_apt
+nobody
+systemd-network
+systemd-timesync
+dhcpcd
+messagebus
+systemd-resolve
+pollinate
+polkitd
+syslog
+uuidd
+tcpdump
+tss
+landscape
+fwupd-refresh
+usbmux
+hanenako
+sshd
+-----------------------------------
+[4] sudo 権限アカウント
+sudo:x:27:hanenako
+-----------------------------------
+[5] ロックされているアカウント
+root L 2025-02-16 0 99999 7 -1
+-----------------------------------
+[6] ログイン不可サービスアカウント
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+-----------------------------------
+===== 完了 =====
